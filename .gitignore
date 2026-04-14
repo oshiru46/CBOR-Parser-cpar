@@ -16,6 +16,8 @@
 coverage.*
 *.coverprofile
 profile.cov
+dist/*
+/cpar
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
@@ -30,3 +32,11 @@ go.work.sum
 # Editor/IDE
 # .idea/
 # .vscode/
+
+
+PLAN.md
+AGENTS.md
+CLAUDE.md
+
+.claude
+.codex
