@@ -387,7 +387,7 @@ func renderCOSEHeaderField(sb *strings.Builder, label string, raw, decoded *cbor
 	if decoded != nil {
 		renderTextMapWithContext(sb, decoded, depth+1, opts, labelContextHeader)
 	} else if raw != nil {
-		renderTextNode(sb, raw, depth+1, opts, labelContextNone)
+		renderTextMapWithContext(sb, raw, depth+1, opts, labelContextHeader)
 	}
 }
 
