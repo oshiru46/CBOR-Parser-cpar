@@ -1,0 +1,6 @@
+map
+  "msg": "hello"
+  "content": tag 24
+    map
+      "id": 1
+      "text": "embedded"

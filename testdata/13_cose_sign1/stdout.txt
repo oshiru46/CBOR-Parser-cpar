@@ -1,0 +1,10 @@
+tag 18 COSE_Sign1
+  protected headers
+    map
+      1 (alg): -7
+  unprotected headers
+    map
+  payload
+    "This is the content."
+  signature
+    h'abcdef01'

@@ -1,0 +1,10 @@
+untagged COSE_Sign1_or_Mac0
+  protected headers
+    map
+      1 (alg): -7
+  unprotected headers
+    map
+  payload
+    h'48656c6c6f'
+  signature_or_tag
+    h'abcdef01'

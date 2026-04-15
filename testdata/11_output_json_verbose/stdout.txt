@@ -1,0 +1,30 @@
+{
+  "_type": "map",
+  "value": {
+    "active": {
+      "_type": "bool",
+      "value": true
+    },
+    "name": {
+      "_type": "text",
+      "value": "Alice"
+    },
+    "scores": {
+      "_type": "array",
+      "value": [
+        {
+          "_type": "uint",
+          "value": 100
+        },
+        {
+          "_type": "uint",
+          "value": 95
+        },
+        {
+          "_type": "uint",
+          "value": 80
+        }
+      ]
+    }
+  }
+}

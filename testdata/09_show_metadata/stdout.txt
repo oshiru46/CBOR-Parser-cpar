@@ -1,0 +1,7 @@
+map (pairs=3)
+  text "name": text "Alice"
+  text "scores": array (len=3)
+    uint 100
+    uint 95
+    uint 80
+  text "active": true

@@ -1,0 +1,7 @@
+map
+  "name": "Alice"
+  "scores": array
+    100
+    95
+    80
+  "active": true

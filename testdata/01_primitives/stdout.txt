@@ -1,0 +1,8 @@
+array
+  true
+  false
+  null
+  42
+  -7
+  "hello"
+  h'deadbeef'
