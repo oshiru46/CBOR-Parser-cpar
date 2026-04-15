@@ -4,11 +4,19 @@ import (
 	"github.com/oshiru/cbor-parser-cpar/internal/cbor"
 )
 
-// defined COSE header parameter keys (RFC 9052 Table 2)
+// definedHeaderKeys lists IANA-registered COSE header parameter labels.
+//   RFC 9052 §3.1 Table 2 : 1–7
+//   RFC 8613 (OSCORE)      : 9
+//   RFC 9360 §2            : 10–13, 33
+//   RFC 9338               : 15
+// Labels 8 (CounterSignature0, deprecated RFC 8152) and 14 (x5t_S256,
+// draft-only, not in final RFC 9360) are intentionally excluded.
 var definedHeaderKeys = map[int64]bool{
-	1: true, 2: true, 3: true, 4: true, 5: true, 6: true,
-	7: true, 8: true, 9: true, 10: true, 11: true, 12: true,
-	13: true, 14: true, 15: true,
+	1: true, 2: true, 3: true, 4: true, 5: true, 6: true, 7: true,
+	9: true,
+	10: true, 11: true, 12: true, 13: true,
+	15: true,
+	33: true,
 }
 
 // defined COSE_Key parameter keys (RFC 9052 Table 3 + curve params)

@@ -1,6 +1,7 @@
 package cose
 
 // headerParamName returns the standard name for a COSE header parameter key.
+// Sources: RFC 9052 §3.1 (1–7), RFC 8613 (9), RFC 9360 §2 (10–13), RFC 9338 (15).
 func headerParamName(key int64) string {
 	switch key {
 	case 1:
@@ -17,8 +18,6 @@ func headerParamName(key int64) string {
 		return "Partial_IV"
 	case 7:
 		return "counter_signature"
-	case 8:
-		return "CounterSignature0"
 	case 9:
 		return "kid_context"
 	case 10:
@@ -29,10 +28,10 @@ func headerParamName(key int64) string {
 		return "x5t"
 	case 13:
 		return "x5u"
-	case 14:
-		return "x5t_S256"
 	case 15:
-		return "Countersignature version 2"
+		return "COSE_Countersignature"
+	case 33:
+		return "x5chain"
 	default:
 		return ""
 	}
